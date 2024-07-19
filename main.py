@@ -13,10 +13,11 @@ class AudioGenerator:
     Extract audio from video.
     """
 
-    def __init__(self,video):
-        self.video = video
+    def __init__(self):
+        pass
 
-    def get_audio(self):
+    def get_audio(self,video):
+        self.video = video
         audio = f"{os.path.splitext(self.video)[0]}_audio.mp3"
         
         ffmpeg.input(self.video).output(audio).run(overwrite_output=True)
@@ -28,10 +29,11 @@ class AudioToCaptions:
     Transcribe captions from audio using speech recognition model Whisper.
     """
 
-    def __init__(self,audio):
-        self.audio = audio
+    def __init__(self):
+        pass
 
-    def transcribe(self):
+    def transcribe(self,audio):
+        self.audio = audio
         model = WhisperModel("small")
         segments, info = model.transcribe(audio)
         language = info[0]
@@ -42,16 +44,14 @@ class AudioToCaptions:
 
 # translate the caption words into english
 
-class TranslateToEnglish:
+class CaptionTranslator:
 
     def __init__(self,caption_segments):
         self.segments = caption_segments
 
-    def translate(self):
+    def translate(self,language):
 
         translator = Translator()
-        
-        language = 'English'
 
         subtitle_file = f'subtitle.{language}.srt'
         text = ""
@@ -60,7 +60,7 @@ class TranslateToEnglish:
             segment_end = time.strftime('%H:%M:%S,000',time.gmtime(segment.end))
             text += f"{str(index + 1)} \n"
             text += f"{segment_start} --> {segment_end} \n"
-            translated_text = translator.translate(segment.text,dest='en')
+            translated_text = translator.translate(segment.text,dest=language)
             text += f"{translated_text.text} \n"
             text += "\n"
         
@@ -70,21 +70,19 @@ class TranslateToEnglish:
         return subtitle_file
 
 
-
-
-
 # replace the caption in the video to the tanslated words
 
 
 class AddSubtitle:
 
-    def __init__(self,video,subtitle):
+    def __init__(self,video):
         self.video = video
+
+
+    def add_sub(self,subtitle):
         self.subtitle = subtitle
 
-    def add_sub(self):
         output_file = f"{self.video.replace('.mp4','')}_with_captions.mp4"
-
 
         video_stream = ffmpeg.input(self.video)
 
@@ -93,13 +91,13 @@ class AddSubtitle:
         return output_file
 
 
-# run
+# run the script
 
 if __name__ == '__main__':
-    audio = AudioGenerator("sample.mp4").get_audio()
-    captions = AudioToCaptions(audio).transcribe()
-    translated_captions = TranslateToEnglish(captions).translate()
-    AddSubtitle("sample.mp4",translated_captions).add_sub()
+    audio = AudioGenerator().get_audio("sample.mp4")
+    captions = AudioToCaptions().transcribe(audio)
+    translated_captions = CaptionTranslator(captions).translate('en')
+    AddSubtitle("sample.mp4").add_sub(translated_captions)
 
 
 

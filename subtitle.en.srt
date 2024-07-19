@@ -1,0 +1,152 @@
+1 
+00:00:00,000 --> 00:00:09,000 
+Hello, can I? Yes of course. 
+
+2 
+00:00:09,000 --> 00:00:24,000 
+Thin! Pardon. 
+
+3 
+00:00:24,000 --> 00:00:25,000 
+It doesn't matter. 
+
+4 
+00:00:25,000 --> 00:00:27,000 
+It doesn't matter. 
+
+5 
+00:00:36,000 --> 00:00:39,000 
+What's your name? Cécile, and you? 
+
+6 
+00:00:39,000 --> 00:00:44,000 
+My name is Francois. I am pleased to meet you. Are you from here? 
+
+7 
+00:00:44,000 --> 00:00:49,000 
+Yes, I live here, and you? I come from research. What do you do for a living? 
+
+8 
+00:00:49,000 --> 00:00:53,000 
+I am a gallery owner, I have a small gallery in the tenth. And you? 
+
+9 
+00:00:53,000 --> 00:00:57,000 
+I am an actor, I play in a small theater. 
+
+10 
+00:00:57,000 --> 00:01:03,000 
+Ah, interesting! And how old are you? 
+
+11 
+00:01:03,000 --> 00:01:06,000 
+I'm thirty-two years old, and you? 
+
+12 
+00:01:06,000 --> 00:01:08,000 
+From Vines. 
+
+13 
+00:01:08,000 --> 00:01:10,000 
+Thirty, maybe? 
+
+14 
+00:01:10,000 --> 00:01:14,000 
+No, I'm thirty-one. 
+
+15 
+00:01:14,000 --> 00:01:19,000 
+You know, I'm looking for a small apartment, do you have any advice, maybe you can help me? 
+
+16 
+00:01:19,000 --> 00:01:25,000 
+Yes, I can help you. But it's already late, I still have a meeting with a client. 
+
+17 
+00:01:25,000 --> 00:01:28,000 
+Do you have time tomorrow around three o'clock to go have a coffee? 
+
+18 
+00:01:28,000 --> 00:01:32,000 
+Yes of course. Will you give me your phone number? 
+
+19 
+00:01:32,000 --> 00:01:43,000 
+So my cell number is 0623048758. 
+
+20 
+00:01:43,000 --> 00:01:45,000 
+Ok. 
+
+21 
+00:01:45,000 --> 00:01:46,000 
+And holds it? 
+
+22 
+00:01:46,000 --> 00:01:48,000 
+Mine is 06... 
+
+23 
+00:01:48,000 --> 00:01:49,000 
+06... 
+
+24 
+00:01:49,000 --> 00:01:50,000 
+89... 
+
+25 
+00:01:50,000 --> 00:01:51,000 
+89... 
+
+26 
+00:01:51,000 --> 00:01:52,000 
+54... 
+
+27 
+00:01:52,000 --> 00:01:53,000 
+54... 
+
+28 
+00:01:53,000 --> 00:01:54,000 
+42... 
+
+29 
+00:01:54,000 --> 00:01:55,000 
+42... 
+
+30 
+00:01:55,000 --> 00:01:56,000 
+61... 
+
+31 
+00:01:56,000 --> 00:01:58,000 
+61... 
+
+32 
+00:02:02,000 --> 00:02:05,000 
+Ok. I'll call you tomorrow for our meeting, then. 
+
+33 
+00:02:05,000 --> 00:02:07,000 
+All right. 
+
+34 
+00:02:07,000 --> 00:02:08,000 
+Bye. 
+
+35 
+00:02:08,000 --> 00:02:09,000 
+Bye. 
+
+36 
+00:02:09,000 --> 00:02:10,000 
+Tomorrow then. 
+
+37 
+00:02:10,000 --> 00:02:11,000 
+See you tomorrow. 
+
+38 
+00:02:18,000 --> 00:02:20,000 
+Bye. 
+
